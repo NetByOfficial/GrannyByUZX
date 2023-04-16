@@ -1,0 +1,62 @@
+.container{
+
+    height: 10cm;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.6cm;
+    float: auto;
+}
+
+.header{
+    background-color: rgba(50, 102, 216, 0.774);
+    color: black;
+    float: left;
+    transition: all 1s;
+    border-radius: 70px;
+    padding: auto;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header a{
+    
+    color: #000;
+    
+}
+
+.header a:hover{
+    background-color: rgb(51, 134, 34);
+    color: #ffffff;
+    transition: all 0.5s
+}
+
+.letoltesgomb{
+    background-color: rgb(26, 84, 209);
+    color: black;
+    float: center;
+    transition: all 1s;
+    border-radius: 70px;
+    padding: 0.1cm;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.letoltesgomb a{
+    background-color: rgb(26, 84, 209);
+    color: black;
+    transition: all 1s;
+}
+
+.letoltesgomb a:hover{
+    color: white;
+    transition: all 0.5s;
+}
+
+.leiras{
+    background-color: rgb(204, 203, 203);
+    height: 6cm;
+    text-align: center;
+    font-size: 0.5cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
