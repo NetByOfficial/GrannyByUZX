@@ -23,7 +23,26 @@
     </div>
 
     <div class="letoltesgomb">
-        <a href="../GAME/granny_by_uzx_setup.exe" download="granny_by_uzx_setup.exe">Letöltés</a>
+        <a href="../GAME/granny_by_uzx_setup.exe" download="granny_by_uzx_setup.exe" onclick="download_count_add()">Letöltés</a>
     </div>
+
+    <script>
+        function getdownload_count()
+        {
+            fetch('https://api.countapi.xyz/get/grannybyuzx/downloadcount')
+            .then(res => res.json())
+            .then(res => {
+                console.log("letöltötték ennyien: " + res.value);
+            })
+            
+        }
+        function download_count_add()
+        {
+            fetch('https://api.countapi.xyz/update/grannybyuzx/downloadcount/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+            }) 
+        }
+    </script>
 </body>
 </html>

@@ -17,5 +17,17 @@
         <br>
         Üdvözöllek a Weboldalon
     </div>
+
+    <script>
+        function getdownload_count()
+        {
+            fetch('https://api.countapi.xyz/get/grannybyuzx/downloadcount')
+            .then(res => res.json())
+            .then(res => {
+                console.log("letöltötték ennyien: " + res.value);
+            })
+            
+        }
+    </script>
 </body>
 </html>
