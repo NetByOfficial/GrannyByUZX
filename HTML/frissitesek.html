@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../ICON/Granny icon.ico" type="image/x-icon">
+    <title>Frissítések</title>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html">|kezdőlap|</a>
+        <a href="letoltes.html">|Letöltés|</a>
+        <a href="frissitesek.html">|Frissítések|</a>
+
+    </div>
+    <div class="container">
+        <br>
+        Frissítések
+    </div>
+
+    <div class="leiras">
+        Verzió: 0.4
+        <br>
+    </div>
+    <div class="frissitesdatum">
+        <a href="../FRISSITESEK/2023. 04.16.html">2023. 04. 16</a>
+    </div>
+    <div class="frissitesleiras">
+        
+    </div>
+<div class="frissiteskep">
+
+</div>
+    
+    <script>
+        function getdownload_count()
+        {
+            fetch('https://api.countapi.xyz/get/grannybyuzx/downloadcount')
+            .then(res => res.json())
+            .then(res => {
+                console.log("letöltötték ennyien: " + res.value);
+            })
+            
+        }
+        function download_count_add()
+        {
+            fetch('https://api.countapi.xyz/update/grannybyuzx/downloadcount/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+            }) 
+        }
+    </script>
+</body>
+</html>

@@ -1,13 +1,35 @@
 .container{
 
-    height: 10cm;
+    height: 1.5cm;
     background-color: rgb(207, 207, 207);
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.6cm;
     float: auto;
 }
+.description{
+    height: 10cm;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5cm;
+    float: auto;
+    
+}
 
+.description a{
+    color: #429ef5;
+    text-align: center;
+    font-size: 0.5cm;
+    float: auto;
+    transition: all 1s;
+}
+
+.description a:hover{
+    background-color: rgb(51, 134, 34);
+    color: #ffffff;
+    transition: all 0.5s
+}
 .header{
     background-color: rgba(50, 102, 216, 0.774);
     color: black;
@@ -59,4 +81,44 @@
     text-align: center;
     font-size: 0.5cm;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.frissites-frissitesekleiras{
+    height: 1.5cm;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5cm;
+    float: auto;
+    padding: 0.1cm;
+    margin-top: -8cm;
+}
+
+.frissitesdatum{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5cm;
+    float: auto;
+
+}
+
+.frissitesdatum{
+    height: 1.5cm;
+     margin-top: -4cm;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.6cm;
+    float: auto;
+}
+
+.frissitesdatum a{
+    color: #429ef5;
+    text-align: center;
+    font-size: 0.5cm;
+    float: auto;
+    transition: all 1s;
+}
+
+.frissitesdatum a:hover{
+    background-color: rgb(51, 134, 34);
+    color: #ffffff;
+    transition: all 0.5s
 }
