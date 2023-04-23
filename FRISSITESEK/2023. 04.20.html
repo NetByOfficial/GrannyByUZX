@@ -6,36 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="../ICON/Granny icon.ico" type="image/x-icon">
-    <title>Frissítések</title>
-    <script src="../JS/engedélyek.js"></script>
+    <title>2023. 04. 20.</title>
 </head>
-<body onload="Értesítés_Engedélykérés()">
+<body>
     <div class="header">
         <a href="../index.html">|kezdőlap|</a>
-        <a href="letoltes.html">|Letöltés|</a>
-        <a href="frissitesek.html">|Frissítések|</a>
-
+        <a href="../HTML/letoltes.html">|Letöltés|</a>
+        <a href="../HTML/frissitesek.html">|Frissítések|</a>
     </div>
     <div class="container">
         <br>
-        Frissítések
+        V0.5
     </div>
-
-    <div class="leiras">
-        Verzió: 0.4
+    <div class="description">
+        2023. 04. 28.
         <br>
-    </div>
-    <div class="frissitesdatum">
-        <a href="../FRISSITESEK/2023. 04.16.html">2023. 04. 16</a>
-        <a href="../FRISSITESEK/2023. 04.20.html">2023. 04. 20</a>
-    </div>
-    <div class="frissitesleiras">
+
+        <div class="nincskiadva">
+            A frisítés még nincs kiadva
+
+        </div>
         
     </div>
-<div class="frissiteskep">
+    </div>
+    <div class="frissites-frissitesekleiras">
+        <br>
+        Barátlista Design ✅ 2023. 04. 20.
+    </div>
 
-</div>
-    
     <script>
         function getdownload_count()
         {
@@ -45,13 +43,6 @@
                 console.log("letöltötték ennyien: " + res.value);
             })
             
-        }
-        function download_count_add()
-        {
-            fetch('https://api.countapi.xyz/update/grannybyuzx/downloadcount/?amount=1')
-            .then(res => res.json())
-            .then(res => {
-            }) 
         }
     </script>
 </body>
