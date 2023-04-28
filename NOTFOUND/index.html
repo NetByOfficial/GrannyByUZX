@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="ICON/Granny icon.ico" type="image/x-icon">
+    <title>404 ERROR</title>
+    <script src="JS/engedélyek.js"></script>
+</head>
+<body onload="Értesítés_Engedélykérés()">
+    <div class="header">
+        <a href="../">|kezdőlap|</a>
+        <a href="../Download">|Letöltés|</a>
+        <a href="../UPDATES/">|Frissítések|</a>
+    </div>
+    <div class="container">
+        <br>
+        404 ERROR
+    </div>
+    <div class="description">
+        <h2>Hiba</h2>
+        Az oldal amit beírtál nem található.
+        <br>
+        Ellenőrizze hogy helyesen irta-e be.
+    </div>
+
+    <script>
+        function getdownload_count()
+        {
+            fetch('https://api.countapi.xyz/get/grannybyuzx/downloadcount')
+            .then(res => res.json())
+            .then(res => {
+                console.log("letöltötték ennyien: " + res.value);
+            })
+            
+        }
+    </script>
+</body>
+</html>
