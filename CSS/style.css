@@ -68,7 +68,7 @@ a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     letter-spacing: 0.5px;
-    padding: 1px;
+    padding: 0 10px;
 }
 
 a:after{
