@@ -20,9 +20,12 @@
 
 
     <div class="container">
-        
     </div>
-    
+    <div class="toggle-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="toggle-slider round"></label>
+      </div>
+      
     <div class="description">
         <br>
         Üdvözöllek a Weboldalon!
@@ -30,6 +33,8 @@
          <a href="Download">| Játék Letöltése |</a>
     </div>
 
+    <script src="JS/dark-mode.js"></script>
+    
     <script>
         function getdownload_count()
         {
@@ -38,8 +43,17 @@
             .then(res => {
                 console.log("letöltötték ennyien: " + res.value);
             })
-            
+        
         }
+        function Értesítés_Engedélykérés() {
+          if ('Notification' in window) {
+             Notification.requestPermission()
+              .then(function (permission) {
+                console.log('Értesítés engedély: ' + permission);
+      });
+  }
+}
+
     </script>
 </body>
 </html>

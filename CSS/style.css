@@ -1,220 +1,333 @@
-body{
-    background-image: url("../Képek/background/background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.container{
-    margin-top: 0.5cm;
-    border-radius: 25px;
-    height: 1.5cm;
-    background-color: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
-    text-align: center;
+/* Alap stílus */
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.6cm;
-    float: auto;
-    color: white;
-    
-}
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+  }
+  
+  .container {
 
-.gombok{
-    margin-top: 0.5cm;
-    height: 1.5cm;
+  }
+  
+  .container:hover {
+    background-color: #0056b3;
+  }
+  
+  .gombok {
+    margin-top: 20px;
+    height: 50px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.4cm;
-    float: auto;
+    font-size: 18px;
     color: white;
     padding: auto;
-}
-.description{
-    color: white;
-    border-radius: 25px;
-    height: 12cm;
-    background-color: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #045dbb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gombok:hover {
+    background-color: #0056b3;
+  }
+  
+  .description {
+    color: #555;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.5cm;
-    float: auto;
-    margin-top: 0.3cm;
-
-}
-@media screen and (max-width: 500px){
-
-body{
-    font-size: 0.5cm;
-    padding: 0.6cm;
-}
-.gombok{
-    margin-top: 0.5cm;
-    height: 1.5cm;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.9mm;
-    float: auto;
-    color: white;
-    padding: auto;
-}
-
-}
-
-a{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  a {
     position: relative;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: #007bff;
     letter-spacing: 0.5px;
     padding: 0 10px;
-}
-
-a:after{
+  }
+  
+  a:after {
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: #007bff;
     height: 3px;
     width: 0%;
     left: 0;
     bottom: -10px;
-    transform: scale(0, 1);
-    transition: transform 0.3s ease;
-}
-a:hover{
-  color: white;
-  transform: scale(1, 1);
-  transition: transform 0.3s ease;
-}
-
-a:hover:after{
+    transition: width 0.3s ease;
+  }
+  
+  a:hover:after {
     width: 100%;
-    transform: scale(1, 1);
-    transition: transform 0.3s ease;
-}
-
-.header{
-    background-color: rgba(255, 255, 255, 0.774);
+  }
+  
+  .header {
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     float: left;
     transition: all 1s;
     border-radius: 70px;
     padding: auto;
     text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.header a{
-    
+  }
+  
+  .header a {
     color: #000;
-    
-}
-
-.header a:hover{
-    
-    color: #ffffff;
-    transition: all 0.5s
-}
-
-.letoltesgomb{
-    margin-top: 0.5cm;
-    border-radius: 25px;
+    transition: color 0.3s ease;
+  }
+  
+  .header a:hover {
+    color: #fff;
+  }
+  
+  .letoltesgomb {
+    margin-top: 20px;
+    border-radius: 10px;
     color: white;
     float: center;
     transition: all 1s;
     border-radius: 70px;
-    padding: 0.1cm;
+    padding: 5px 20px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.letoltesgomb a{
-    color: rgb(255, 255, 255);
-    transition: all 1s;
-}
-
-.letoltesgomb a:hover{
+  }
+  
+  .letoltesgomb a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .letoltesgomb a:hover {
+    color: #0056b3;
+  }
+  
+  .img-container {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .leiras {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
     color: white;
-    transition: all 0.5s;
-}
-
-img{
-    border-radius: 25px;
-}
-
-.leiras{
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.137);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.384);
+    height: 200px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .frissites-frissitesekleiras {
     color: white;
-    height: 6cm;
+    height: 30px;
     text-align: center;
-    font-size: 0.5cm;
+    color: rgb(58, 58, 58);
+  }
+  
+  
+  .frissitesdatum {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.frissites-frissitesekleiras{
-    color: white;
-    height: 1.5cm;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.4cm;
-    float: auto;
-    padding: 0.1cm;
-    margin-top: -10.5cm;
-
-}
-
-.frissitesdatum{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.5cm;
-    float: auto;
-
-}
-
-.frissitesdatum{
-    height: 1.5cm;
-     margin-top: -4cm;
+    font-size: 18px;
+  }
+  
+  .frissitesdatum {
+    height: 30px;
+    margin-top: -100px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.6cm;
-    float: auto;
-}
-
-.frissitesdatum a{
-    color: #ffffff;
-    text-align: center;
-    font-size: 0.5cm;
-    float: auto;
-    transition: all 1s;
-}
-
-.frissitesdatum a:hover{
-    color: white;
-    transition: all 0.5s
-}
-
-.nincskiadva{
-    border-radius: 15px;
-    padding: auto;
+    font-size: 24px;
+  }
+  
+  .frissitesdatum a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .frissitesdatum a:hover {
+    color: #0056b3;
+  }
+  
+  .nincskiadva {
+    border-radius: 10px;
+    padding: 10px;
     float: center;
-    background-color: #000000;
-    margin: 0.2cm;
-    color: rgb(170, 0, 0);
+    background-color: #000;
+    margin: 10px;
+    color: #a80000;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-    font-size: 0.5cm;
-}
-
-.frissites-frissitesekleirasmini{
-    color: white;
-    height: 1.5cm;
+    font-size: 18px;
+  }
+  
+  .frissites-frissitesekleirasmini {
+    color: rgb(58, 58, 58);
+    height: 30px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3.2mm;
-    float: auto;
-    padding: 0.1cm;
-    margin-top: -10.5cm;
+  }
+  
+  /* Dark Mode */
 
-}
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: all 0.4s;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s;
+    border-radius: 24px;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: all 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: #2196F3;
+    transition: all 0.4s;
+  }
+  
+  input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+    background-color: #fff;
+    transition: all 0.4s;
+  }
+  
+  .toggle-slider.round {
+    border-radius: 24px;
+  }
+  
+  .toggle-slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Animációk */
+  @keyframes darkenBackground {
+    from {
+      background-color: #ccc;
+      transition: all 0.4s;
+    }
+    to {
+      background-color: #333;
+      transition: all 0.4s;
+    }
+  }
+  
+  @keyframes lightenBackground {
+    from {
+      background-color: #333;
+      transition: all 0.4s;
+    }
+    to {
+      background-color: #ccc;
+      transition: all 0.4s;
+    }
+  }
+  
+  @keyframes darkenBall {
+    from {
+      transform: translateX(3px);
+    }
+    to {
+      transform: translateX(26px);
+    }
+  }
+  
+  @keyframes lightenBall {
+    from {
+      transform: translateX(26px);
+    }
+    to {
+      transform: translateX(3px);
+    }
+  }
+  
+  input:checked + .toggle-slider {
+    animation: darkenBackground .4s ease;
+  }
+  
+  input:checked + .toggle-slider:before {
+    animation: darkenBall .4s ease;
+  }
+  
+  input:not(:checked) + .toggle-slider {
+    animation: lightenBackground .4s ease;
+  }
+  
+  input:not(:checked) + .toggle-slider:before {
+    animation: lightenBall .4s ease;
+  }
+  
+  /* Sötét mód stílus */
+  .dark-mode {
+    background-color: #333;
+    transition: all 0.4s;
+  }
+  
+  .dark-mode .toggle-slider {
+    background-color: #666;
+    transition: all 0.4s;
+  }
+  
+  .dark-mode .toggle-slider:before {
+    background-color: #fff;
+    transition: all 0.4s;
+  }
+  
+
+  
+  @media screen and (max-width: 500px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .gombok {
+      margin-top: 20px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+
+  
+  
